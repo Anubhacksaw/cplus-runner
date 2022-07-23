@@ -17,10 +17,11 @@ com (){
 	sleep 5
 	sf
 	else
+		echo "___Your Output file___"
+		./$a
 		break
 	fi
-	echo "___Your Output file___"
-	./$a 
+	 
 }
 echo "\033[41;5m▄︻デC̷ P̷L̷U̷S̷ P̷L̷U̷S̷ R̷U̷N̷N̷E̷R̷══━一\033[0m"
 echo "Enter the file name: "
@@ -31,7 +32,8 @@ do
 echo " "
 echo "--------------------------"
 echo "1. I want to edit my code"
-echo "2.Exit"
+echo "2.Run again"
+echo "3.Exit"
 echo "--------------------------"
 echo " "
 read c
@@ -39,7 +41,11 @@ case $c in
 	1 )
 		sf
 		;;
-	2 )
+	2)
+		echo "___Your Output file___"
+		./$a
+		;;
+	3 )
 		echo "\033[42;5m _____Exiting_____\033[0m"
 		echo "\033[44;5m@Anubhab\033[0m"
 		echo "\033[33mhttps://github.com/Anubhab-ai\033[0m"
